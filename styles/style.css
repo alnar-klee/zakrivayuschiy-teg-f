@@ -16,6 +16,7 @@
   font-variation-settings: "wght" var(--card-text-font-wght, 400);
   font-size: var(--main-font-size, 18px);
   color: var(--text-color, #000);
+  background-color: var(--bg-color, #fff);
   background-image: var(--background-gradient);
   background-size: cover;
   background-attachment: fixed;
@@ -84,6 +85,7 @@
 
 .card_img {
   object-fit: cover;
+  object-position: center;
   inline-size: 100%;
   block-size: 100%;
   max-block-size: 100%;
@@ -91,35 +93,35 @@
   display: block;
 }
 
-.start_img {
+.sepia-contrast_img {
   filter: sepia(20%) contrast(120%);
 }
 
-.blank_brain_img {
-  filter: blur(1px) saturate(10%);
+.blur_img {
+  filter: blur(1px);
 }
 
-.after-blank_img {
+.brightness_img {
   filter: brightness(150%);
 }
 
-.video-start_img {
+.grayscale_img {
   filter: grayscale(100%);
 }
 
-.video-after_img {
-  filter: brightness(120%) saturate(150%) contrast(120%);
+.contrast_img {
+  filter: contrast(115%);
 }
 
-.dark-mode-start_img {
+.saturate-contrast_img {
   filter: saturate(200%) contrast(120%);
 }
 
-.dark-mode-after_img {
+.saturate_img {
   filter: saturate(200%);
 }
 
-.now_img {
+.invert_img {
   filter: invert(80%);
 }
 
@@ -305,6 +307,10 @@
 
 .dialog-button {
   padding: 9px 0;
+}
+
+.dialog_button-text {
+  text-transform: uppercase;
 }
 
 .dialog-floppy {
