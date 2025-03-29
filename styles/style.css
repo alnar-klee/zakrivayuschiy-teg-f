@@ -11,7 +11,6 @@
 */
 
 .page {
-  min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font, "Inter-Variable"), "Arial", sans-serif;
   font-variation-settings: "wght" var(--card-text-font-wght, 400);
